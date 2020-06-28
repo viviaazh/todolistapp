@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RegisterActivity">
+    tools:context=".ui.RegisterActivity">
 
     <ImageView
         android:layout_width="120dp"
@@ -26,18 +26,18 @@
         app:layout_constraintBottom_toBottomOf="parent">
 
         <EditText
-            android:id="@+id/reg_nama"
+            android:id="@+id/reg_username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
-            android:hint="Nama" />
+            android:hint="Username" />
 
         <EditText
-            android:id="@+id/reg_email"
+            android:id="@+id/reg_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
-            android:hint="Email"
+            android:hint="Name"
             android:inputType="textEmailAddress" />
 
         <EditText
@@ -57,7 +57,8 @@
             android:text="Register"
             android:textAllCaps="false"
             android:textColor="#fff"
-            android:textSize="18dp" />
+            android:textSize="18dp"
+            android:onClick="handleRegister"/>
 
     </LinearLayout>
 

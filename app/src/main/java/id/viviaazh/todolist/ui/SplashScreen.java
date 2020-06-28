@@ -1,9 +1,11 @@
-package id.viviaazh.todolist;
-
-import androidx.appcompat.app.AppCompatActivity;
+package id.viviaazh.todolist.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import id.viviaazh.todolist.R;
 
 public class SplashScreen extends AppCompatActivity {
 
