@@ -10,20 +10,6 @@ public class Error {
     @Expose
     private List<String> username = null;
 
-    @SerializedName("name")
-    @Expose
-    private List<String> name = null;
-
-    @SerializedName("password")
-    @Expose
-    private List<String> password = null;
-
-    public Error(List<String> username, List<String> name, List<String> password) {
-        this.username = username;
-        this.name = name;
-        this.password = password;
-    }
-
     public List<String> getUsername() {
         return username;
     }
@@ -31,6 +17,10 @@ public class Error {
     public void setUsername(List<String> username) {
         this.username = username;
     }
+
+    @SerializedName("name")
+    @Expose
+    private List<String> name = null;
 
     public List<String> getName() {
         return name;
@@ -40,11 +30,27 @@ public class Error {
         this.name = name;
     }
 
-    public List<String> getPassword() {
-        return password;
+    @SerializedName("currentPassword")
+    @Expose
+    private List<String> currentPassword = null;
+
+    public List<String> getCurrentPassword() {
+        return currentPassword;
     }
 
-    public void setPassword(List<String> password) {
-        this.password = password;
+    public void setCurrentPassword(List<String> currentPassword) {
+        this.currentPassword = currentPassword;
+    }
+
+    @SerializedName("newPassword")
+    @Expose
+    private List<String> newPassword = null;
+
+    public List<String> getNewPassword() {
+        return newPassword;
+    }
+
+    public void setNewPassword(List<String> newPassword) {
+        this.newPassword = newPassword;
     }
 }

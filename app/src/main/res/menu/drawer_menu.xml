@@ -9,16 +9,21 @@
         <item
             android:id="@+id/home"
             android:title="Home"
-            android:icon="@drawable/home_icon"/>
+            android:icon="@drawable/home_icon"
+            />
 
         <item
             android:id="@+id/addtodo"
             android:title="Add ToDoList"
-            android:icon="@drawable/todo_icon"/>
+            android:icon="@drawable/todo_icon"
+            android:onClick="handleTodo"/>
+
 
         <item
             android:id="@+id/profile"
             android:title="Profile"
-            android:icon="@drawable/profile_icon"/>
+            android:icon="@drawable/profile_icon"
+            android:onClick="handleProfile"/>
+
     </group>
 </menu>

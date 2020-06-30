@@ -54,11 +54,11 @@ public class RegisterActivity extends AppCompatActivity {
                     else if(error.getError().getPassword()!=null){
                         Toast.makeText(RegisterActivity.this, error.getError().getPassword().get(0), Toast.LENGTH_SHORT).show();
                     }
-                    else if(error.getError().getPassword()!=null){
-                        for(int k=0; k<error.getError().getPassword().size(); k++){
-                            Toast.makeText(RegisterActivity.this, error.getError().getPassword().get(k), Toast.LENGTH_SHORT).show();
-                        }
-                    }
+//                    else if(error.getError().getPassword()!=null){
+//                        for(int k=0; k<error.getError().getPassword().size(); k++){
+//                            Toast.makeText(RegisterActivity.this, error.getError().getPassword().get(k), Toast.LENGTH_SHORT).show();
+//                        }
+//                    }
                 }
             }
 
